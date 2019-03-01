@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is the HomePage</h1>
+<h1> Click the teachers name for more information about them.</h1>
+ <h1> Click the School to see the hours of all the teachers at that particular school</h1>
+{% for x in TeacherList %}
+<a href="{% url 'teacherinfo' x.id %}">Name:{{x.name}}</a><br>
+<a href ="{% url 'allhours' x.id %}">School:{{x.school}}</a><br>
+<hr>
+{% endfor %}
+
+
+
+</body>
+</html>

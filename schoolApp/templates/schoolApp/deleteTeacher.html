@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form  method="post">
+    <h1>Are you sure you want to delete "{{deleteTeacher.name}}" ?</h1>
+    {% csrf_token %}
+    <button>Yes</button>
+</form>
+    <a href="{% url 'index' %}"><button>No</button></a>
+
+</body>
+</html>

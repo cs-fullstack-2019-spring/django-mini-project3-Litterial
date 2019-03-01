@@ -49,7 +49,7 @@ def teacherinfo(request,ID):
 #Gets Hours from all Schools
 def allhours(request,ID):
     teacherSchool=get_object_or_404(Teacher,pk=ID)
-    schoolOnly=Teacher.objects.filter(school=teacherSchool.school)
-    print(teacherSchool.school)
+    schoolOnly=Teacher.objects.filter(school=teacherSchool.school)  #filters out all schools
+    print(teacherSchool.school)  #placeholder for testing
 
     return render(request,'schoolApp/allhours.html',{'context':schoolOnly})

@@ -1,3 +1,6 @@
+### POINTS: 2
+### KEY: Really Nice job man!
+
 # Mini-Project Django
 
 THIS IS A SOLO PROJECT.
